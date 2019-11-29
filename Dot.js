@@ -152,10 +152,13 @@ class Dot {
   //possivelmente alterar isso
   calculateFitness() {
     if (this.reachedGoal) {
-      this.fitness = 1.0/16.0 + 10000.0/(this.brain.step*this.brain.step);
+      this.fitness = 1.0/16.0 + 100000.0/(this.brain.step*this.brain.step);
+      console.log("moreu no obj "+this.fitness);
     } else {//didnt reached goal
+      console.log("moreu "+this.fitness);
+
       let distanceGoal = this.pos.dist(goal);
-      this.fitness = 1.0 / (distanceGoal*distanceGoal);
+      this.fitness = 1000.0 / (distanceGoal*distanceGoal);
     }
   }
   //-----------------------------------------------------------------------------
