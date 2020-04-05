@@ -2,6 +2,8 @@
 Utilizando algoritmo genético num cenário criado </br>
 com obstáculos objetivando atingir uma meta.
 
+https://irixs.github.io/dotGA/
+
 ## Grupo
 💜 Bruno Martins </br> 
 💛 Iris Soares </br>
